@@ -1,14 +1,25 @@
+import os
 import pandas as pd
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix
 import joblib
 import mlflow
 import mlflow.sklearn
-# added dagshub for recommended way to use mlflow
-import dagshub
-dagshub.init(repo_owner='sjrom47', repo_name='mlops-practica-icai', mlflow=True)
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Cargar el conjunto de datos desde el archivo CSV
+try:
+    iris = pd.read_csv("data/iris_dataset.csv")
+except FileNotFoundError:
+    print("Error: El archivo 'data/iris_dataset.csv' no fue encontrado.")
+
+# Dividir el DataFrame en características (X) y etiquetas (y)
+X = iris.drop("target", axis=1)
+y = iris["target"]
+
 
 # Cargar el conjunto de datos
 iris = datasets.load_iris()

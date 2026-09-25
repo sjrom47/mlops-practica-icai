@@ -2363,6 +2363,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pathspec" },
     { name = "scikit-learn" },
+    { name = "seaborn" },
 ]
 
 [package.metadata]
@@ -2374,6 +2375,7 @@ requires-dist = [
     { name = "pandas", specifier = "==2.2.2" },
     { name = "pathspec", specifier = "<1" },
     { name = "scikit-learn", specifier = "==1.3.0" },
+    { name = "seaborn", specifier = ">=0.13.2" },
 ]
 
 [[package]]
@@ -3627,6 +3629,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/7a/cb/7171ed74f65a498e5b3a24781359fc2926b19879ed4ae77cce08e17039c9/scmrepo-1.6.0.tar.gz", hash = "sha256:0092c3f99da7db327602fb1f655b9cca9a936ffabee7ab79eb6be23d627af7a2", size = 84439, upload-time = "2023-12-13T11:02:26.567Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/3b/2361391ffaa200e858ddac71494ba71b3683d1cb8306f32dd650aeb602b4/scmrepo-1.6.0-py3-none-any.whl", hash = "sha256:389c3ae694309c62268ce193d149a5bd344af28306943fe332a9907b0cb6d0fb", size = 71055, upload-time = "2023-12-13T11:02:24.178Z" },
+]
+
+[[package]]
+name = "seaborn"
+version = "0.13.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/86/59/a451d7420a77ab0b98f7affa3a1d78a313d2f7281a57afb1a34bae8ab412/seaborn-0.13.2.tar.gz", hash = "sha256:93e60a40988f4d65e9f4885df477e2fdaff6b73a9ded434c1ab356dd57eefff7", size = 1457696, upload-time = "2024-01-25T13:21:52.551Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl", hash = "sha256:636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987", size = 294914, upload-time = "2024-01-25T13:21:49.598Z" },
 ]
 
 [[package]]
