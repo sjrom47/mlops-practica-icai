@@ -6,7 +6,9 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "dagshub>=0.7.2",
+    "dotenv>=0.9.9",
     "dvc[s3]==3.32.0",
+    "matplotlib>=3.11.1",
     "mlflow>=3.0",
     "numpy==1.26.4",
     "pandas==2.2.2",
