@@ -5,3 +5,4 @@ mlruns/
 mlflow.db
 .env
 *.png
+docker_action.yml
