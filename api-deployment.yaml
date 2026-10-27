@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: mlops-api
-          image: gcr.io//mlops-api:latest  # <-- Reemplaza con la ruta de tu imagen
+          image: gcr.io/angular-rhythm-511106-k2/mlops-api:latest
           ports:
             - containerPort: 5000
