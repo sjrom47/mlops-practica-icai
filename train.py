@@ -1,17 +1,18 @@
 import argparse
+import json
 import os
-import pandas as pd
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, confusion_matrix
+
 import joblib
+import matplotlib.pyplot as plt
 import mlflow
 import mlflow.sklearn
-import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
 from dotenv import load_dotenv
-import json
+from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn.model_selection import train_test_split
 
 load_dotenv()
 
